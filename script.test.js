@@ -4,7 +4,9 @@ test('First character capitalized', () =>{
     expect(capitalize("blabla")).toBe("Blabla");
 });
 
-// test('String is reversed')
+test('String is reversed', () => {
+    expect(reverseString("blabla")).toBe("albalb");
+})
 
 // test('adding two numbers')
 
