@@ -8,7 +8,9 @@ test('String is reversed', () => {
     expect(reverseString("blabla")).toBe("albalb");
 })
 
-// test('adding two numbers')
+test('adding two numbers', () => {
+    expect(calculator.add(2,3)).toBe(5);
+})
 
 // test('subtracting two numbers')
 

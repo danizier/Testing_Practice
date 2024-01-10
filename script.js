@@ -7,4 +7,9 @@ function reverseString(string){
     return string.split("").reverse().join("");
 }
 
-module.exports = {capitalize, reverseString};
+const calculator = (function (){
+    const add = (a , b) => a+ b;
+    return {add};
+})();
+
+module.exports = {capitalize, reverseString, calculator};
