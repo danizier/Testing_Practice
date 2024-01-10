@@ -19,11 +19,29 @@ function caesarCipher(str) {
   let charcodearr = [];
   for (let index = 0; index < str.length; index++) {
     charcode = str.charCodeAt(index) + 2;
-    if (charcode >= 91) charcode =- (91 - 65);
+    if (charcode >= 91) charcode = -(91 - 65);
     charcodearr.push(charcode);
   }
   let text = String.fromCharCode(...charcodearr);
   return text;
 }
 
-module.exports = { capitalize, reverseString, calculator, caesarCipher };
+const analyzeArray = (function () {
+  const avg = function (arr) {
+    let sum = 0;
+    arr.forEach((element) => (sum += element));
+    return sum / arr.length;
+  };
+  const min = (arr) => Math.min(...arr);
+  const max = (arr) => Math.max(...arr);
+  const length = (arr) => arr.length;
+  return { avg, min, max, length };
+})();
+
+module.exports = {
+  capitalize,
+  reverseString,
+  calculator,
+  caesarCipher,
+  analyzeArray,
+};

@@ -28,10 +28,18 @@ test('String Character are shifted', () => {
     expect(caesarCipher("abc")).toBe("CDE");
 })
 
-// test('Average Array Value')
+test('Average Array Value', () => {
+    expect(analyzeArray.avg([2,2,4,4])).toBe(3);
+})
 
-// test('Min Array Value')
+test('Min Array Value', ()=>{
+    expect(analyzeArray.min([1,2,3,4])).toBe(1);
+})
 
-// test('Max Array Value')
+test('Max Array Value', ()=>{
+    expect(analyzeArray.max([2,3,4,5])).toBe(5);
+})
 
-// test('Array Length')
+test('Array Length', () =>{
+    expect(analyzeArray.length([1,2,3,4])).toBe(4);
+})
