@@ -14,12 +14,12 @@ const calculator = (function () {
   return { add, sub, mul, div };
 })();
 
-function caesarCipher(str) {
+function caesarCipher(str, shift) {
   str = str.toUpperCase();
   let charcodearr = [];
   for (let index = 0; index < str.length; index++) {
-    charcode = str.charCodeAt(index) + 2;
-    if (charcode >= 91) charcode = -(91 - 65);
+    charcode = str.charCodeAt(index) + shift;
+    if (charcode >= 91) charcode -= (91 - 65);
     charcodearr.push(charcode);
   }
   let text = String.fromCharCode(...charcodearr);
