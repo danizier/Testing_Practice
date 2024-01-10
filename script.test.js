@@ -12,11 +12,17 @@ test('adding two numbers', () => {
     expect(calculator.add(2,3)).toBe(5);
 })
 
-// test('subtracting two numbers')
+test('substract two numbers', () => {
+    expect(calculator.sub(2,3)).toBe(-1);
+})
 
-// test('divide two numbers')
+test('multiply two numbers', () => {
+    expect(calculator.mul(2,3)).toBe(6);
+})
 
-// test('multiply two numbers')
+test('divide two numbers', () => {
+    expect(calculator.add(2,3)).toBe(5);
+})
 
 // test('String Character are shifted')
 
