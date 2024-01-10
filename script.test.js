@@ -24,7 +24,9 @@ test('divide two numbers', () => {
     expect(calculator.add(2,3)).toBe(5);
 })
 
-// test('String Character are shifted')
+test('String Character are shifted', () => {
+    expect(caesarCipher("abc")).toBe("CDE");
+})
 
 // test('Average Array Value')
 
