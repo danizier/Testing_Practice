@@ -1,6 +1,8 @@
 const { capitalize, reverseString, calculator, caesarCipher, analyzeArray} = require('./script')
 
-test('First character capitalized')
+test('First character capitalized', () =>{
+    expect(capitalize("blabla")).toBe("Blabla")
+})
 
 test('String is reversed')
 
